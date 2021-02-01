@@ -1,0 +1,6 @@
+C:\Users\hesim\source\repos\WebSocket\WebSocket.Server\bin\Debug\WebSocket.Server.exe.config
+C:\Users\hesim\source\repos\WebSocket\WebSocket.Server\bin\Debug\WebSocket.Server.exe
+C:\Users\hesim\source\repos\WebSocket\WebSocket.Server\bin\Debug\WebSocket.Server.pdb
+C:\Users\hesim\source\repos\WebSocket\WebSocket.Server\obj\Debug\WebSocket.Server.csprojAssemblyReference.cache
+C:\Users\hesim\source\repos\WebSocket\WebSocket.Server\obj\Debug\WebSocket.Server.exe
+C:\Users\hesim\source\repos\WebSocket\WebSocket.Server\obj\Debug\WebSocket.Server.pdb
