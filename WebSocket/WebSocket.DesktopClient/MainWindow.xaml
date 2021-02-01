@@ -1,0 +1,59 @@
+﻿<Window x:Class="WebSocket.DesktopClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebSocket.DesktopClient"
+        xmlns:vm="clr-namespace:WebSocket.DesktopClient.ViewModel"
+        
+        mc:Ignorable="d"
+        Title="Client" Height="450" Width="800"
+        MinWidth="400">
+    
+    <!--
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closing">
+            <i:InvokeCommandAction
+                Command="{Binding WindowClosingCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    -->
+    
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              Margin="10">
+            <ListBox x:Name="msgList" ItemsSource="{Binding Messages}">
+                
+            </ListBox>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0"
+                     Text="{Binding Message}"
+                     Margin="10"/>
+
+            <Button Grid.Column="1" x:Name="sendBtn"
+                    Command="{Binding SendMessageCommand}"
+                    Content="Send"
+                    Margin="10"
+                    Width="100"/>
+        </Grid>
+        
+    </Grid>
+    
+</Window>
